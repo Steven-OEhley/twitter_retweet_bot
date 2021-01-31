@@ -43,7 +43,7 @@ for tweet in tweepy.Cursor(api.search, search).items(nr_Tweets):
 	try:
 		tweet.favorite()
 		tweet.retweet()
-		print('Tweet Liked')
+		print('Tweet Liked & Retweeted')
 		time.sleep(15)
 	except tweepy.TweepError as e:
 		print(e.reason)
